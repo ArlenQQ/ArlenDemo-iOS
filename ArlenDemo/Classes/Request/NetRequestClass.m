@@ -9,12 +9,6 @@
 
 #import "NetRequestClass.h"
 #import "PPNetworkHelper.h"
-#import "AlertPopView.h"
-#import "MMAlertAction.h"
-#import "MMAlertController.h"
-#import "HomePageViewController.h"
-#import "JdbTabBarController.h"
-#import "LJLoginUtil.h"
 
 @implementation NetRequestClass
 
@@ -36,14 +30,14 @@
 
 //统一配置请求头的相关参数
 + (void)setCommonHTTPHeaderField {
-    [PPNetworkHelper setValue:[LJDeviceUtil uuid] forHTTPHeaderField:@"device-id"];
-    [PPNetworkHelper setValue:[NSString stringWithFormat:@"%f",IOSVersion] forHTTPHeaderField:@"os-version"];
-    [PPNetworkHelper setValue:@"9" forHTTPHeaderField:@"dev-model"];
-    [PPNetworkHelper setValue:kMyVersion forHTTPHeaderField:@"version-code"];
-    [PPNetworkHelper setValue:@"9" forHTTPHeaderField:@"dev-type"];
-    
-    NSLog(@"%@",[LJDeviceUtil accessToken]);
-    [PPNetworkHelper setValue:[LJDeviceUtil accessToken] forHTTPHeaderField:@"token"];
+//    [PPNetworkHelper setValue:[LJDeviceUtil uuid] forHTTPHeaderField:@"device-id"];
+//    [PPNetworkHelper setValue:[NSString stringWithFormat:@"%f",IOSVersion] forHTTPHeaderField:@"os-version"];
+//    [PPNetworkHelper setValue:@"9" forHTTPHeaderField:@"dev-model"];
+//    [PPNetworkHelper setValue:kMyVersion forHTTPHeaderField:@"version-code"];
+//    [PPNetworkHelper setValue:@"9" forHTTPHeaderField:@"dev-type"];
+//    
+//    NSLog(@"%@",[LJDeviceUtil accessToken]);
+//    [PPNetworkHelper setValue:[LJDeviceUtil accessToken] forHTTPHeaderField:@"token"];
 }
 
 /**
@@ -80,13 +74,7 @@
         //缓存block
         responseCacheBlock(responseCache);
     } success:^(id responseObject) {
-        // 如果errorCode等于0，调用successBlock(dic)
-        if ([[responseObject objectForKey:@"errcode"] intValue] == 0) {
-            // 在这里你可以根据项目自定义其他一些重复操作,比如加载页面时候的等待效果, 提醒弹窗....
-            successBlock(responseObject);
-        } else {
-            errorBlock(responseObject);
-        }
+
     } failure:^(NSError *error) {
         // 同上
         failureBlock(error);
@@ -120,54 +108,9 @@
     //统一配置请求头的相关参数
     [self setCommonHTTPHeaderField];
     
-    //如果没有Token 不是登录请求 不做网络请求
-    if ([[LJDeviceUtil accessToken] isEqualToString:@""]) {
-        if ([requestURLString containsString:@"/login/"] || [requestURLString containsString:@"/common/captcha"] || [requestURLString containsString:@"/forgetpassword/"] || [requestURLString containsString:@"/weixinlogin/"]) {
-            //nothing
-        } else {
-            return;
-        }
-    }
-    /** 特殊处理优惠券数据统计接口 */
-//    bool isCouponStatisResquest = false;
-//    if ([requestURLString containsString:kCouponStatis]) {
-//        isCouponStatisResquest = true;
-//    }
-    // 发起请求
     [PPNetworkHelper POST:requestURLString parameters:parameter success:^(id responseObject) {
-        // 如果errorCode等于0，调用successBlock(dic)
-        if ([responseObject objectForKey:@"code"] != nil && [[responseObject objectForKey:@"code"] intValue] == 0) {
-            if ([[responseObject objectForKey:@"data"] isKindOfClass:[NSArray class]]) {
-                // 在这里你可以根据项目自定义其他一些重复操作,比如加载页面时候的等待效果, 提醒弹窗....
-                successBlock(responseObject);
-            }
-//            if (isCouponStatisResquest) {
-//                if ([[responseObject objectForKey:@"data"] isKindOfClass:[NSDictionary class]]) {
-//                    successBlock(responseObject);
-//                }
-//            }
-            
-//            // 在这里你可以根据项目自定义其他一些重复操作,比如加载页面时候的等待效果, 提醒弹窗....
-//            successBlock(responseObject);
-        } else {
-            NSInteger code = [[responseObject objectForKey:@"code"] integerValue];
-            if (code == 5250 || code == 5249 || code == 5248) {
-                NSString *msg = [responseObject objectForKey:@"msg"];
-                if ([requestURLString containsString:kRefreshToken]) {
-                    return;
-                }
-                [self showLoginAlertTitle:@"提示" message:msg];
-                return;
-            }
-            errorBlock(responseObject);
-        }
+        successBlock(responseObject);
     } failure:^(NSError *error) {
-        
-        //网络异常
-        AlertPopView *alert = [[AlertPopView alloc] init];
-        alert.msg = @"网络异常，请检查网络连接";//@"网络异常！";
-        [alert show];
-        
         failureBlock(error);
     }];
 }
@@ -215,34 +158,15 @@
             progressBlock(progress);
         }
     } success:^(id responseObject) {
-        if ([responseObject objectForKey:@"code"] != nil && [[responseObject objectForKey:@"code"] intValue] == 0) {
-            // 在这里你可以根据项目自定义其他一些重复操作,比如加载页面时候的等待效果, 提醒弹窗....
-            if (successBlock) {
-                successBlock(responseObject);
-            }
-        } else {
-            
-            NSInteger code = [[responseObject objectForKey:@"code"] integerValue];
-            if (code == 5250 || code == 5249 || code == 5248) {
-                NSString *msg = [responseObject objectForKey:@"msg"];
-                [self showLoginAlertTitle:@"提示" message:msg];
-                return;
-            }
-            if (errorBlock) {
-                errorBlock(responseObject);
-            }
-            
-        }
+        successBlock(responseObject);
     } failure:^(NSError *error) {
-        if (failureBlock) {
-            failureBlock(error);
-        }
+        failureBlock(error);
     }];
 }
 
 +(void) showLoginAlertTitle:(NSString *)title message:(NSString *)message{
-    [SVProgressHUD dismiss];
-    [LJLoginUtil lj_showReloginAlertWithTitle:title msg:message];
+//    [SVProgressHUD dismiss];
+//    [LJLoginUtil lj_showReloginAlertWithTitle:title msg:message];
 }
 
 @end

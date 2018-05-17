@@ -6,6 +6,8 @@
 //  Copyright © 2017年 Leju. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 //定义返回请求数据的block类型
 typedef void(^HttpResponseCache)(id responseCache);
 typedef void (^ReturnValueBlock) (id returnValue);

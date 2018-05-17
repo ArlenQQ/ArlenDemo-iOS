@@ -38,15 +38,15 @@
     return _dbQueue;
 }
 
-static MMFMDB *jqdb = nil;
+static ASFMDB *jqdb = nil;
 + (instancetype)shareDatabase
 {
-    return [MMFMDB shareDatabase:nil];
+    return [ASFMDB shareDatabase:nil];
 }
 
 + (instancetype)shareDatabase:(NSString *)dbName
 {
-    return [MMFMDB shareDatabase:dbName path:nil];
+    return [ASFMDB shareDatabase:dbName path:nil];
 }
 
 + (instancetype)shareDatabase:(NSString *)dbName path:(NSString *)dbPath
@@ -55,7 +55,7 @@ static MMFMDB *jqdb = nil;
         
         NSString *path;
         if (!dbName) {
-            dbName = @"MMFMDB.sqlite";
+            dbName = @"ASFMDB.sqlite";
         }
         if (!dbPath) {
             path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:dbName];
@@ -65,7 +65,7 @@ static MMFMDB *jqdb = nil;
         
         FMDatabase *fmdb = [FMDatabase databaseWithPath:path];
         if ([fmdb open]) {
-            jqdb = MMFMDB.new;
+            jqdb = ASFMDB.new;
             jqdb.db = fmdb;
             jqdb.dbPath = path;
         }
@@ -85,7 +85,7 @@ static MMFMDB *jqdb = nil;
 - (instancetype)initWithDBName:(NSString *)dbName path:(NSString *)dbPath
 {
     if (!dbName) {
-        dbName = @"MMFMDB.sqlite";
+        dbName = @"ASFMDB.sqlite";
     }
     NSString *path;
     if (!dbPath) {

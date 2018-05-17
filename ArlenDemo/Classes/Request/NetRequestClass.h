@@ -7,6 +7,7 @@
 //
 
 #import"AFNetworking.h"
+#import "NetAPIConst.h"
 
 @interface NetRequestClass : NSObject
 

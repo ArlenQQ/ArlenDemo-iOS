@@ -1,22 +1,32 @@
 //
-//  AppDelegate.m
+//  ASAppDelegate.m
 //  ArlenDemo
 //
 //  Created by 乐居Mac on 2018/5/17.
 //  Copyright © 2018年 乐居Mac. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "ASAppDelegate.h"
+#import "AOPLogger.h"
 
-@interface AppDelegate ()
+@interface ASAppDelegate ()
+
+
 
 @end
 
-@implementation AppDelegate
-
+@implementation ASAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //统一设置状态栏的样式
+    #pragma clang diagnostic push
+    #pragma clang diagnostic ignored "-Wdeprecated-declarations"
+    [application setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
+    #pragma clang diagnostic pop
+    //统计埋点
+    [AOPLogger startAOPLoggerWithPlist];
     return YES;
 }
 
@@ -46,6 +56,5 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
 
 @end

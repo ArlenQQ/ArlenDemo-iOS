@@ -1,16 +1,16 @@
 //
-//  ColorTheme.h
-//  Zhiputong
+//  ASColorMacros.h
+//  ArlenDemo
 //
-//  Created by 乐居Mac on 2017/11/20.
-//  Copyright © 2017年 Leju. All rights reserved.
+//  Created by 乐居Mac on 2018/5/17.
+//  Copyright © 2018年 乐居Mac. All rights reserved.
 //
 
-#ifndef ColorTheme_h
-#define ColorTheme_h
+#ifndef ASColorMacros_h
+#define ASColorMacros_h
 
 
-#define ThemeColorName(name) [UIColor hexColor:[NSString stringWithFormat:@"%@", name]]
+#define kColorName(name) [UIColor hexColor:[NSString stringWithFormat:@"%@", name]]
 
 #define kCX_26A6FF @"26A6FF"
 #define kC0_FF9A38 @"26A6FF"
@@ -57,10 +57,5 @@
 #define kC37_FFA95E @"FFA95E"
 #define kC38_FFF4DA @"FFF4DA"
 
-/** 微邦定 */
-#define kC22_B5B5B5 @"B5B5B5"
 
-#define KC23_0086F1 @"0086F1"
-#define KC24_DCDCDC @"DCDCDC"
-
-#endif /* ColorTheme_h */
+#endif /* ASColorMacros_h */

@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "UIView+AOPGestureRecognizer.h"
 
-@interface ViewController ()
+@interface ViewController ()<AOPLoggerGestureRecognizerProtocol>
 
 @property (nonatomic,strong) dispatch_source_t timer;
 
@@ -19,6 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self animationDashLine];
+    
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(noticeAction:)];
+
+    [self.view addGestureRecognizer:tap];
 }
 
 /** 虚线滚动 */
@@ -66,6 +72,18 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)algrp_handleGesture:(UIGestureRecognizer *)gestureRecognizer{
+    
+    ASLog(@"algrp_handleGesture");
+    
+}
+
+-(void) noticeAction:(id) sender{
+    ASLog(@"noticeAction");
+    [self algrp_handleGesture:sender];
+}
+
 
 
 @end

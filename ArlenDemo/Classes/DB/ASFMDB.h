@@ -16,9 +16,9 @@
 - (NSInteger)lastInsertPrimaryKeyId:(NSString *)tableName;
 
 /**
- 单例方法创建数据库, 如果使用shareDatabase创建,则默认在NSDocumentDirectory下创建MMFMDB.sqlite, 但只要使用这三个方法任意一个创建成功, 之后即可使用三个中任意一个方法获得同一个实例,参数可随意或nil
+ 单例方法创建数据库, 如果使用shareDatabase创建,则默认在NSDocumentDirectory下创建ASFMDB.sqlite, 但只要使用这三个方法任意一个创建成功, 之后即可使用三个中任意一个方法获得同一个实例,参数可随意或nil
  
- dbName 数据库的名称 如: @"Users.sqlite", 如果dbName = nil,则默认dbName=@"MMFMDB.sqlite"
+ dbName 数据库的名称 如: @"Users.sqlite", 如果dbName = nil,则默认dbName=@"ASFMDB.sqlite"
  dbPath 数据库的路径, 如果dbPath = nil, 则路径默认为NSDocumentDirectory
  */
 + (instancetype)shareDatabase;

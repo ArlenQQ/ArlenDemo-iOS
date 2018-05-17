@@ -7,7 +7,7 @@
 //
 
 #import "NetRequestClass.h"
-#import "AlertPopView.h"
+
 
 @interface ViewModelClass : NSObject
 
