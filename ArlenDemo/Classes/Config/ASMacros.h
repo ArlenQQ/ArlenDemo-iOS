@@ -28,6 +28,7 @@
 //不同屏幕尺寸字体适配
 #define kScreenWidthRatio  (UIScreen.mainScreen.bounds.size.width / 375.0)
 #define kScreenHeightRatio (UIScreen.mainScreen.bounds.size.height / 667.0)
+//注：ceil(x)返回不小于x的最小整数值（然后转换为double型）。floor(x)返回不大于x的最大整数值。round(x)返回x的四舍五入整数值。
 #define AdaptedWidth(x)  ceilf((x) * kScreenWidthRatio)
 #define AdaptedHeight(x) ceilf((x) * kScreenHeightRatio)
 #define AdaptedFontSize(R)     [UIFont systemFontOfSize:AdaptedWidth(R)]
@@ -52,8 +53,8 @@
 || ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
 
 //强弱引用
-#define ASWeakObj(o) autoreleasepool{} __weak typeof(o) o##Weak = o;
-#define ASStrongObj(o) autoreleasepool{} __strong typeof(o) o = o##Weak;
+#define WeakObj(o) autoreleasepool{} __weak typeof(o) o##Weak = o;
+#define StrongObj(o) autoreleasepool{} __strong typeof(o) o = o##Weak;
 
 //系统版本
 #define IOSVersion      [[[UIDevice currentDevice] systemVersion] floatValue]

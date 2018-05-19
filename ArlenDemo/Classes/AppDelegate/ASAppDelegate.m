@@ -8,8 +8,13 @@
 
 #import "ASAppDelegate.h"
 #import "AOPLogger.h"
+#import "ASPlusButtonSubclass.h"
+#import "ASTabBarControllerConfig.h"
+#import "CYLTabBarController.h"
+#import "UIView+Animation.h"
 
-@interface ASAppDelegate ()
+
+@interface ASAppDelegate ()<UITabBarControllerDelegate, CYLTabBarControllerDelegate>
 
 
 
@@ -19,6 +24,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // 设置主窗口,并设置根控制器
+    self.window = [[UIWindow alloc]init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    
+    //注册中间按钮
+    [ASPlusButtonSubclass registerPlusButton];
+    
+    ASTabBarControllerConfig *tabBarControllerConfig = [[ASTabBarControllerConfig alloc] init];
+    CYLTabBarController *tabBarController = tabBarControllerConfig.tabBarController;
+    [self.window setRootViewController:tabBarController];
+    
+    tabBarController.delegate = self;
+    [self.window makeKeyAndVisible];
+    [self customizeInterfaceWithTabBarController:tabBarController];
     
     //统一设置状态栏的样式
     #pragma clang diagnostic push
@@ -29,6 +48,102 @@
     [AOPLogger startAOPLoggerWithPlist];
     return YES;
 }
+
+
+- (void)customizeInterfaceWithTabBarController:(CYLTabBarController *)tabBarController {
+    //设置导航栏
+    [self setUpNavigationBarAppearance];
+    
+    [tabBarController hideTabBadgeBackgroundSeparator];
+    //添加小红点
+    UIViewController *viewController = tabBarController.viewControllers[0];
+    UIView *tabBadgePointView0 = [UIView cyl_tabBadgePointViewWithClolor:kColorRandom radius:4.5];
+    [viewController.tabBarItem.cyl_tabButton cyl_setTabBadgePointView:tabBadgePointView0];
+    [viewController cyl_showTabBadgePoint];
+    
+    UIView *tabBadgePointView1 = [UIView cyl_tabBadgePointViewWithClolor:kColorRandom radius:4.5];
+    @try {
+        [tabBarController.viewControllers[1] cyl_setTabBadgePointView:tabBadgePointView1];
+        [tabBarController.viewControllers[1] cyl_showTabBadgePoint];
+        
+        UIView *tabBadgePointView2 = [UIView cyl_tabBadgePointViewWithClolor:kColorRandom radius:4.5];
+        [tabBarController.viewControllers[2] cyl_setTabBadgePointView:tabBadgePointView2];
+        [tabBarController.viewControllers[2] cyl_showTabBadgePoint];
+        
+        [tabBarController.viewControllers[3] cyl_showTabBadgePoint];
+        
+        //添加提示动画，引导用户点击
+        [UIView addScaleAnimationOnView:tabBarController.viewControllers[3].cyl_tabButton.cyl_tabImageView repeatCount:20];
+    } @catch (NSException *exception) {}
+}
+
+/**
+ *  设置navigationBar样式
+ */
+- (void)setUpNavigationBarAppearance {
+    UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
+    
+//    UIImage *backgroundImage = nil;
+    NSDictionary *textAttributes = nil;
+    if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) {
+//        backgroundImage = [UIImage imageNamed:@"navigationbar_background_tall"];
+        
+        textAttributes = @{
+                           NSFontAttributeName : [UIFont boldSystemFontOfSize:18],
+                           NSForegroundColorAttributeName : [UIColor blackColor],
+                           };
+    } else {
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
+//        backgroundImage = [UIImage imageNamed:@"navigationbar_background"];
+        textAttributes = @{
+                           UITextAttributeFont : [UIFont boldSystemFontOfSize:18],
+                           UITextAttributeTextColor : [UIColor blackColor],
+                           UITextAttributeTextShadowColor : [UIColor clearColor],
+                           UITextAttributeTextShadowOffset : [NSValue valueWithUIOffset:UIOffsetZero],
+                           };
+#endif
+    }
+    
+//    [navigationBarAppearance setBackgroundImage:backgroundImage
+//                                  forBarMetrics:UIBarMetricsDefault];
+    [navigationBarAppearance setTitleTextAttributes:textAttributes];
+    [navigationBarAppearance setBackgroundColor:kColorName(kCX_NAVTHEME)];
+}
+
+#pragma mark - delegate
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
+    [[self cyl_tabBarController] updateSelectionStatusIfNeededForTabBarController:tabBarController shouldSelectViewController:viewController];
+    return YES;
+}
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectControl:(UIControl *)control {
+    UIView *animationView;
+    
+    if ([control cyl_isTabButton]) {
+        //更改红标状态
+        if ([[self cyl_tabBarController].selectedViewController cyl_isShowTabBadgePoint]) {
+            [[self cyl_tabBarController].selectedViewController cyl_removeTabBadgePoint];
+        } else {
+            [[self cyl_tabBarController].selectedViewController cyl_showTabBadgePoint];
+        }
+        
+        animationView = [control cyl_tabImageView];
+    }
+    
+    // 即使 PlusButton 也添加了点击事件，点击 PlusButton 后也会触发该代理方法。
+    if ([control cyl_isPlusButton]) {
+        UIButton *button = CYLExternPlusButton;
+        animationView = button.imageView;
+    }
+    
+    if ([self cyl_tabBarController].selectedIndex % 2 == 0) {
+        [UIView addScaleAnimationOnView:animationView repeatCount:1];
+    } else {
+        [UIView addRotateAnimationOnView:animationView];
+    }
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

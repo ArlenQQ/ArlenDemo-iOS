@@ -13,5 +13,4 @@
 /** #EEEEEE 或 EEEEEE */
 + (UIColor *)hexColor:(NSString *)hexString;
 
-
 @end

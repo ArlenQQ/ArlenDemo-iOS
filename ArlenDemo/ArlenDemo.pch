@@ -21,6 +21,11 @@
 
 //================= 分类 =================
 #import "UIColor+Extension.h"
+#import "UIView+ASFrame.h"
+#import "MBProgressHUD+AS.h"
+#import <UIImageView+WebCache.h>
+
+#import <YYCategories.h>
 
 #endif
 

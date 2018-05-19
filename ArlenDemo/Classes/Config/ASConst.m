@@ -15,54 +15,54 @@ NSString *const kMail_cc_ToRecipients_Address = @"64hp@163.com";
 NSString *const kURL_Reachability__Address = @"www.baidu.com";
 
 // 友盟
-NSString *const LMJThirdSDKUMConfigInstanceAppKey = @"58aa7d20e88bad08c1001dcd";
+NSString *const ASThirdSDKUMConfigInstanceAppKey = @"58aa7d20e88bad08c1001dcd";
 
-NSString *const LMJThirdSDKUMConfigInstanceChannelId = @"App Store";
+NSString *const ASThirdSDKUMConfigInstanceChannelId = @"App Store";
 
-NSString *const LMJThirdSDKUMSocialAppkey = @"58aa7d20e88bad08c1001dcd";
+NSString *const ASThirdSDKUMSocialAppkey = @"58aa7d20e88bad08c1001dcd";
 
-NSString *const LMJThirdSDKUMessageStartWithAppkey = @"58aa7d20e88bad08c1001dcd";
+NSString *const ASThirdSDKUMessageStartWithAppkey = @"58aa7d20e88bad08c1001dcd";
 
-NSString *const LMJThirdSDKUMessageAppMasterSecret = @"ntljqfii29nachyuqpbmwl5u5yofkyk6";
+NSString *const ASThirdSDKUMessageAppMasterSecret = @"ntljqfii29nachyuqpbmwl5u5yofkyk6";
 
 
 // UM 微信登录
-NSString *const LMJThirdSDKWeChatAppKey = @"wxdc1e388c3822c80b";
+NSString *const ASThirdSDKWeChatAppKey = @"wxdc1e388c3822c80b";
 
-NSString *const LMJThirdSDKWeChatAppSecret = @"3baf1193c85774b3fd9d18447d76cab0";
+NSString *const ASThirdSDKWeChatAppSecret = @"3baf1193c85774b3fd9d18447d76cab0";
 
-NSString *const LMJThirdSDKWeChatRedirectURL = @"http://mobile.umeng.com/social";
+NSString *const ASThirdSDKWeChatRedirectURL = @"http://mobile.umeng.com/social";
 
 
 //sina
-NSString *const LMJThirdSDKSinaAppKey = @"4061770881";
+NSString *const ASThirdSDKSinaAppKey = @"4061770881";
 
-NSString *const LMJThirdSDKSinaAppSecret = @"f48ff7f7791061a99a523c5381bf48ee";
+NSString *const ASThirdSDKSinaAppSecret = @"f48ff7f7791061a99a523c5381bf48ee";
 
-NSString *const LMJThirdSDKSinaRedirectURL = @"http://zplan.com.cn";
+NSString *const ASThirdSDKSinaRedirectURL = @"http://zplan.com.cn";
 
 // UMQQ
-NSString *const LMJThirdSDKQQAppKey = @"1105821097";
+NSString *const ASThirdSDKQQAppKey = @"1105821097";
 
-NSString *const LMJThirdSDKQQAppSecret = @"ublD75ttNYKh0zXx";
+NSString *const ASThirdSDKQQAppSecret = @"ublD75ttNYKh0zXx";
 
-NSString *const LMJThirdSDKQQRedirectURL = @"http://mobile.umeng.com/social";
+NSString *const ASThirdSDKQQRedirectURL = @"http://mobile.umeng.com/social";
 
 
 // 魔窗
-NSString *const LMJThirdSDKMagicWindow = @"75Z6Q063T395YQ85QN27FDR7RAVIEKR7";
+NSString *const ASThirdSDKMagicWindow = @"75Z6Q063T395YQ85QN27FDR7RAVIEKR7";
 
 //百度地图
-NSString *const LMJThirdSDKBaiduMapKey = @"K4FQLr0hX8zGxsYdGVuFTAmpMNRCVLBF";
+NSString *const ASThirdSDKBaiduMapKey = @"K4FQLr0hX8zGxsYdGVuFTAmpMNRCVLBF";
 
 // 科大讯飞
 NSString *const  USER_APPID = @"56ce54a5";
 
 // 服务器XMG
-NSString *const LMJXMGBaseUrl = @"http://120.25.226.186:32812";
+NSString *const ASXMGBaseUrl = @"http://120.25.226.186:32812";
 
 
 // 通知
-NSString *const LMJUMSocialShareSucceedNotification = @"LMJUMSocialShareSucceedNotification";
+NSString *const ASUMSocialShareSucceedNotification = @"ASUMSocialShareSucceedNotification";
 
-NSString *const LMJTableViewControllerDeallocNotification = @"LMJTableViewControllerDeallocNotification";
+NSString *const ASTableViewControllerDeallocNotification = @"ASTableViewControllerDeallocNotification";
