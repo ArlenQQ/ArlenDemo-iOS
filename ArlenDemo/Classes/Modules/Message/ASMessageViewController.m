@@ -24,6 +24,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(NSMutableAttributedString *)asNavigationBarTitle:(ASNavigationBar *)navigationBar{
+    
+    return [self changeTitle:@"基础功能"];
+}
+
+
 /*
 #pragma mark - Navigation
 

@@ -26,6 +26,8 @@
 #import <UIImageView+WebCache.h>
 
 #import <YYCategories.h>
+//================= 第三方 ================
+#import "Masonry.h"
 
 #endif
 

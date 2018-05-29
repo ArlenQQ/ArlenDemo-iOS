@@ -88,6 +88,14 @@
 		F68A787B20AE7B6A000C2544 /* ASVerticalFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F68A786620AE7B6A000C2544 /* ASVerticalFlowLayout.m */; };
 		F68A787E20AEA4D2000C2544 /* UIView+ASFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = F68A787C20AEA4D1000C2544 /* UIView+ASFrame.m */; };
 		F68A788120AEA727000C2544 /* MBProgressHUD+AS.m in Sources */ = {isa = PBXBuildFile; fileRef = F68A788020AEA727000C2544 /* MBProgressHUD+AS.m */; };
+		F694F84320BCE5ED00A9775E /* ASElementsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F694F84220BCE5ED00A9775E /* ASElementsCollectionViewController.m */; };
+		F694F84720BCEB8F00A9775E /* ASVerticalLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F694F84620BCEB8F00A9775E /* ASVerticalLayoutViewController.m */; };
+		F694F84A20BCED0200A9775E /* ASHorizontalLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F694F84920BCED0200A9775E /* ASHorizontalLayoutViewController.m */; };
+		F694F84D20BCEEC400A9775E /* ASCuteFlowLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F694F84C20BCEEC400A9775E /* ASCuteFlowLayoutViewController.m */; };
+		F694F85120BCEFE700A9775E /* ASCircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F694F85020BCEFE700A9775E /* ASCircleLayout.m */; };
+		F694F85420BCF16200A9775E /* ASGirdLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F694F85320BCF16200A9775E /* ASGirdLayout.m */; };
+		F694F85720BCF21B00A9775E /* ASLineFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F694F85620BCF21B00A9775E /* ASLineFlowLayout.m */; };
+		F694F85920BCF3AE00A9775E /* Preview.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F694F85820BCF3AE00A9775E /* Preview.xcassets */; };
 		F6CC192720ADA4C300B88887 /* ASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CC192620ADA4C300B88887 /* ASAppDelegate.m */; };
 		F6CC192E20ADAA2E00B88887 /* ASNotificationConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CC192D20ADAA2E00B88887 /* ASNotificationConst.m */; };
 		F6CC193120ADAA6C00B88887 /* ASConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CC193020ADAA6C00B88887 /* ASConst.m */; };
@@ -282,6 +290,21 @@
 		F68A787D20AEA4D2000C2544 /* UIView+ASFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ASFrame.h"; sourceTree = "<group>"; };
 		F68A787F20AEA727000C2544 /* MBProgressHUD+AS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+AS.h"; sourceTree = "<group>"; };
 		F68A788020AEA727000C2544 /* MBProgressHUD+AS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+AS.m"; sourceTree = "<group>"; };
+		F694F84120BCE5ED00A9775E /* ASElementsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASElementsCollectionViewController.h; sourceTree = "<group>"; };
+		F694F84220BCE5ED00A9775E /* ASElementsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASElementsCollectionViewController.m; sourceTree = "<group>"; };
+		F694F84520BCEB8F00A9775E /* ASVerticalLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASVerticalLayoutViewController.h; sourceTree = "<group>"; };
+		F694F84620BCEB8F00A9775E /* ASVerticalLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASVerticalLayoutViewController.m; sourceTree = "<group>"; };
+		F694F84820BCED0200A9775E /* ASHorizontalLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASHorizontalLayoutViewController.h; sourceTree = "<group>"; };
+		F694F84920BCED0200A9775E /* ASHorizontalLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASHorizontalLayoutViewController.m; sourceTree = "<group>"; };
+		F694F84B20BCEEC400A9775E /* ASCuteFlowLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASCuteFlowLayoutViewController.h; sourceTree = "<group>"; };
+		F694F84C20BCEEC400A9775E /* ASCuteFlowLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASCuteFlowLayoutViewController.m; sourceTree = "<group>"; };
+		F694F84F20BCEFE700A9775E /* ASCircleLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASCircleLayout.h; sourceTree = "<group>"; };
+		F694F85020BCEFE700A9775E /* ASCircleLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASCircleLayout.m; sourceTree = "<group>"; };
+		F694F85220BCF16200A9775E /* ASGirdLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASGirdLayout.h; sourceTree = "<group>"; };
+		F694F85320BCF16200A9775E /* ASGirdLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASGirdLayout.m; sourceTree = "<group>"; };
+		F694F85520BCF21B00A9775E /* ASLineFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASLineFlowLayout.h; sourceTree = "<group>"; };
+		F694F85620BCF21B00A9775E /* ASLineFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASLineFlowLayout.m; sourceTree = "<group>"; };
+		F694F85820BCF3AE00A9775E /* Preview.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Preview.xcassets; sourceTree = "<group>"; };
 		F6CC192520ADA4C300B88887 /* ASAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAppDelegate.h; sourceTree = "<group>"; };
 		F6CC192620ADA4C300B88887 /* ASAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASAppDelegate.m; sourceTree = "<group>"; };
 		F6CC192820ADA75B00B88887 /* ASColorMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASColorMacros.h; sourceTree = "<group>"; };
@@ -739,6 +762,7 @@
 		F68A77D920AE708B000C2544 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F694F84420BCEAFE00A9775E /* CollectionView_Example */,
 				F68A77E120AE719D000C2544 /* ASHomeViewController.h */,
 				F68A77E220AE719D000C2544 /* ASHomeViewController.m */,
 			);
@@ -856,6 +880,36 @@
 			path = BaseView;
 			sourceTree = "<group>";
 		};
+		F694F84420BCEAFE00A9775E /* CollectionView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				F694F84E20BCEFCA00A9775E /* Layout */,
+				F694F84120BCE5ED00A9775E /* ASElementsCollectionViewController.h */,
+				F694F84220BCE5ED00A9775E /* ASElementsCollectionViewController.m */,
+				F694F84520BCEB8F00A9775E /* ASVerticalLayoutViewController.h */,
+				F694F84620BCEB8F00A9775E /* ASVerticalLayoutViewController.m */,
+				F694F84820BCED0200A9775E /* ASHorizontalLayoutViewController.h */,
+				F694F84920BCED0200A9775E /* ASHorizontalLayoutViewController.m */,
+				F694F84B20BCEEC400A9775E /* ASCuteFlowLayoutViewController.h */,
+				F694F84C20BCEEC400A9775E /* ASCuteFlowLayoutViewController.m */,
+				F694F85820BCF3AE00A9775E /* Preview.xcassets */,
+			);
+			path = CollectionView_Example;
+			sourceTree = "<group>";
+		};
+		F694F84E20BCEFCA00A9775E /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				F694F84F20BCEFE700A9775E /* ASCircleLayout.h */,
+				F694F85020BCEFE700A9775E /* ASCircleLayout.m */,
+				F694F85220BCF16200A9775E /* ASGirdLayout.h */,
+				F694F85320BCF16200A9775E /* ASGirdLayout.m */,
+				F694F85520BCF21B00A9775E /* ASLineFlowLayout.h */,
+				F694F85620BCF21B00A9775E /* ASLineFlowLayout.m */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -964,6 +1018,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F694F85920BCF3AE00A9775E /* Preview.xcassets in Resources */,
 				F64D425820AD1E1F004F60A5 /* Assets.xcassets in Resources */,
 				F64D434220AD5BB7004F60A5 /* AOPLoggerConfig.plist in Resources */,
 			);
@@ -1072,11 +1127,13 @@
 				F68A786C20AE7B6A000C2544 /* ASRefreshTableViewController.m in Sources */,
 				F68A786A20AE7B6A000C2544 /* ASNavUIBaseViewController.m in Sources */,
 				F614862920AEDC23008F829C /* UIView+ASTransform.m in Sources */,
+				F694F85720BCF21B00A9775E /* ASLineFlowLayout.m in Sources */,
 				F64D430F20AD53E0004F60A5 /* SUITool+OpenURL.m in Sources */,
 				F6CC192E20ADAA2E00B88887 /* ASNotificationConst.m in Sources */,
 				F64D433820AD579A004F60A5 /* AOPLogger+Custom.m in Sources */,
 				F6CC193720ADAC4300B88887 /* ASCommonUtil.m in Sources */,
 				F64D430A20AD53E0004F60A5 /* NSString+SUICrypto.m in Sources */,
+				F694F84D20BCEEC400A9775E /* ASCuteFlowLayoutViewController.m in Sources */,
 				F64D42AD20AD2965004F60A5 /* ASFMDB.m in Sources */,
 				F64D431520AD53E0004F60A5 /* UINavigationController+SUIAdditions.m in Sources */,
 				F64D42A120AD2606004F60A5 /* NetAPIConst.m in Sources */,
@@ -1089,12 +1146,15 @@
 				F64D431220AD53E0004F60A5 /* UIControl+SUIAdditions.m in Sources */,
 				F64D431920AD53E0004F60A5 /* UITextField+SUIAdditions.m in Sources */,
 				F6CC193A20ADB30400B88887 /* UIColor+Extension.m in Sources */,
+				F694F84720BCEB8F00A9775E /* ASVerticalLayoutViewController.m in Sources */,
 				F64D430D20AD53E0004F60A5 /* SUITool+Delay.m in Sources */,
 				F68A77E920AE71EC000C2544 /* ASCenterPlusViewController.m in Sources */,
 				F68A786E20AE7B6A000C2544 /* ASStaticTableViewController.m in Sources */,
 				F64D430420AD53E0004F60A5 /* NSDictionary+SUIAdditions.m in Sources */,
+				F694F84A20BCED0200A9775E /* ASHorizontalLayoutViewController.m in Sources */,
 				F64D42A320AD2606004F60A5 /* ViewModelClass.m in Sources */,
 				F64D430820AD53E0004F60A5 /* NSObject+SUIAdditions.m in Sources */,
+				F694F85420BCF16200A9775E /* ASGirdLayout.m in Sources */,
 				F68A77F520AE7813000C2544 /* UIView+Animation.m in Sources */,
 				F64D42B620AD4E6E004F60A5 /* PPNetworkHelper.m in Sources */,
 				F64D433720AD579A004F60A5 /* UIView+AOPGestureRecognizer.m in Sources */,
@@ -1103,6 +1163,7 @@
 				F68A77E020AE708C000C2544 /* ASTabBarControllerConfig.m in Sources */,
 				F64D430720AD53E0004F60A5 /* NSNumber+SUIAdditions.m in Sources */,
 				F68A788120AEA727000C2544 /* MBProgressHUD+AS.m in Sources */,
+				F694F85120BCEFE700A9775E /* ASCircleLayout.m in Sources */,
 				F68A787B20AE7B6A000C2544 /* ASVerticalFlowLayout.m in Sources */,
 				F68A787A20AE7B6A000C2544 /* ASSettingCell.m in Sources */,
 				F68A787920AE7B6A000C2544 /* ASNormalRefreshHeader.m in Sources */,
@@ -1123,6 +1184,7 @@
 				F64D430020AD53E0004F60A5 /* NSArray+SUIAdditions.m in Sources */,
 				F68A787520AE7B6A000C2544 /* ASAutoRefreshFooter.m in Sources */,
 				F64D430120AD53E0004F60A5 /* NSArray+SUISafeAccess.m in Sources */,
+				F694F84320BCE5ED00A9775E /* ASElementsCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
