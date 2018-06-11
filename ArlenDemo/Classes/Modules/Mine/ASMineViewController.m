@@ -18,6 +18,19 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
+    ASWordItem *item00 = [ASWordItem itemWithTitle:@"列表视频" subTitle: @"Video"];
+    
+    @WeakObj(self);
+    [item00 setItemOperation:^(NSIndexPath *indexPath){
+        
+        //UIStoryboard *video_sb = [UIStoryboard storyboardWithName:@"Video" bundle:[NSBundle mainBundle]];
+        
+        [selfWeak presentViewController:[[UIStoryboard storyboardWithName:@"Video" bundle:[NSBundle mainBundle]] instantiateInitialViewController] animated:YES completion:nil];
+    }];
+    
+    ASItemSection *section0 = [ASItemSection sectionWithItems:@[item00] andHeaderTitle:nil footerTitle:nil];
+    
+    [self.sections addObject:section0];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,7 +41,7 @@
 
 -(NSMutableAttributedString *)asNavigationBarTitle:(ASNavigationBar *)navigationBar{
     
-    return [self changeTitle:@"第三方功能演示"];
+    return [self changeTitle:@"第三方功能整合演示"];
 }
 
 /*

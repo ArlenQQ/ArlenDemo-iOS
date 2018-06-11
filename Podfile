@@ -99,6 +99,7 @@ target 'ArlenDemo' do
     # 列表视频
     pod "ZFPlayer"
     #pod 'ZFDownload'
+    #pod 'KTVHTTPCache', :git => 'https://github.com/ChangbaDevs/KTVHTTPCache.git'
     
     # mark-
     # 泡泡uibutton

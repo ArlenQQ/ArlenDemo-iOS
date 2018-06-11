@@ -57,6 +57,11 @@
 		F64D433A20AD579A004F60A5 /* AOPLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F64D433220AD579A004F60A5 /* AOPLogger.m */; };
 		F64D433B20AD579A004F60A5 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = F64D433520AD579A004F60A5 /* Aspects.m */; };
 		F64D434220AD5BB7004F60A5 /* AOPLoggerConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = F64D434120AD5BB7004F60A5 /* AOPLoggerConfig.plist */; };
+		F66CC3F120CE138E0000071F /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66CC3EF20CE138E0000071F /* Video.storyboard */; };
+		F66CC3F420CE1D300000071F /* ASVideoNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66CC3F320CE1D300000071F /* ASVideoNormalViewController.m */; };
+		F66CC3F720CE1D6B0000071F /* ASVideoTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66CC3F620CE1D6B0000071F /* ASVideoTableViewViewController.m */; };
+		F66CC3FA20CE1D8F0000071F /* ASVideoCollectionViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66CC3F920CE1D8F0000071F /* ASVideoCollectionViewViewController.m */; };
+		F66CC3FD20CE1DE90000071F /* ASVideoDownloadsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66CC3FC20CE1DE90000071F /* ASVideoDownloadsViewController.m */; };
 		F68A77E020AE708C000C2544 /* ASTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F68A77DD20AE708B000C2544 /* ASTabBarControllerConfig.m */; };
 		F68A77E320AE719D000C2544 /* ASHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68A77E220AE719D000C2544 /* ASHomeViewController.m */; };
 		F68A77E620AE71B5000C2544 /* ASMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68A77E520AE71B5000C2544 /* ASMessageViewController.m */; };
@@ -228,6 +233,15 @@
 		F64D433520AD579A004F60A5 /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
 		F64D433C20AD5952004F60A5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F64D434120AD5BB7004F60A5 /* AOPLoggerConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AOPLoggerConfig.plist; sourceTree = "<group>"; };
+		F66CC3F020CE138E0000071F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Video.storyboard; sourceTree = "<group>"; };
+		F66CC3F220CE1D300000071F /* ASVideoNormalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASVideoNormalViewController.h; sourceTree = "<group>"; };
+		F66CC3F320CE1D300000071F /* ASVideoNormalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASVideoNormalViewController.m; sourceTree = "<group>"; };
+		F66CC3F520CE1D6B0000071F /* ASVideoTableViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASVideoTableViewViewController.h; sourceTree = "<group>"; };
+		F66CC3F620CE1D6B0000071F /* ASVideoTableViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASVideoTableViewViewController.m; sourceTree = "<group>"; };
+		F66CC3F820CE1D8F0000071F /* ASVideoCollectionViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASVideoCollectionViewViewController.h; sourceTree = "<group>"; };
+		F66CC3F920CE1D8F0000071F /* ASVideoCollectionViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASVideoCollectionViewViewController.m; sourceTree = "<group>"; };
+		F66CC3FB20CE1DE90000071F /* ASVideoDownloadsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASVideoDownloadsViewController.h; sourceTree = "<group>"; };
+		F66CC3FC20CE1DE90000071F /* ASVideoDownloadsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASVideoDownloadsViewController.m; sourceTree = "<group>"; };
 		F68A77DC20AE708B000C2544 /* ASTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTabBarControllerConfig.h; sourceTree = "<group>"; };
 		F68A77DD20AE708B000C2544 /* ASTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTabBarControllerConfig.m; sourceTree = "<group>"; };
 		F68A77E120AE719D000C2544 /* ASHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASHomeViewController.h; sourceTree = "<group>"; };
@@ -531,6 +545,7 @@
 		F64D42A420AD270C004F60A5 /* Base.lproj */ = {
 			isa = PBXGroup;
 			children = (
+				F66CC3EF20CE138E0000071F /* Video.storyboard */,
 			);
 			path = Base.lproj;
 			sourceTree = "<group>";
@@ -748,6 +763,21 @@
 			path = Aspects;
 			sourceTree = "<group>";
 		};
+		F66CC3EE20CE12E30000071F /* Video-sample */ = {
+			isa = PBXGroup;
+			children = (
+				F66CC3F220CE1D300000071F /* ASVideoNormalViewController.h */,
+				F66CC3F320CE1D300000071F /* ASVideoNormalViewController.m */,
+				F66CC3F520CE1D6B0000071F /* ASVideoTableViewViewController.h */,
+				F66CC3F620CE1D6B0000071F /* ASVideoTableViewViewController.m */,
+				F66CC3F820CE1D8F0000071F /* ASVideoCollectionViewViewController.h */,
+				F66CC3F920CE1D8F0000071F /* ASVideoCollectionViewViewController.m */,
+				F66CC3FB20CE1DE90000071F /* ASVideoDownloadsViewController.h */,
+				F66CC3FC20CE1DE90000071F /* ASVideoDownloadsViewController.m */,
+			);
+			path = "Video-sample";
+			sourceTree = "<group>";
+		};
 		F68A77D820AE708B000C2544 /* CenterPlus */ = {
 			isa = PBXGroup;
 			children = (
@@ -801,6 +831,7 @@
 		F68A77DF20AE708C000C2544 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				F66CC3EE20CE12E30000071F /* Video-sample */,
 				F68A77ED20AE721A000C2544 /* ASMineViewController.h */,
 				F68A77EE20AE721A000C2544 /* ASMineViewController.m */,
 			);
@@ -1020,6 +1051,7 @@
 			files = (
 				F694F85920BCF3AE00A9775E /* Preview.xcassets in Resources */,
 				F64D425820AD1E1F004F60A5 /* Assets.xcassets in Resources */,
+				F66CC3F120CE138E0000071F /* Video.storyboard in Resources */,
 				F64D434220AD5BB7004F60A5 /* AOPLoggerConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1099,6 +1131,7 @@
 				F64D429D20AD2606004F60A5 /* main.m in Sources */,
 				F68A787020AE7B6A000C2544 /* ASTextViewController.m in Sources */,
 				F68A77E320AE719D000C2544 /* ASHomeViewController.m in Sources */,
+				F66CC3F720CE1D6B0000071F /* ASVideoTableViewViewController.m in Sources */,
 				F64D430920AD53E0004F60A5 /* NSString+SUIAdditions.m in Sources */,
 				F68A787620AE7B6A000C2544 /* ASElementsFlowLayout.m in Sources */,
 				F68A786920AE7B6A000C2544 /* ASNavigationController.m in Sources */,
@@ -1132,12 +1165,14 @@
 				F6CC192E20ADAA2E00B88887 /* ASNotificationConst.m in Sources */,
 				F64D433820AD579A004F60A5 /* AOPLogger+Custom.m in Sources */,
 				F6CC193720ADAC4300B88887 /* ASCommonUtil.m in Sources */,
+				F66CC3FA20CE1D8F0000071F /* ASVideoCollectionViewViewController.m in Sources */,
 				F64D430A20AD53E0004F60A5 /* NSString+SUICrypto.m in Sources */,
 				F694F84D20BCEEC400A9775E /* ASCuteFlowLayoutViewController.m in Sources */,
 				F64D42AD20AD2965004F60A5 /* ASFMDB.m in Sources */,
 				F64D431520AD53E0004F60A5 /* UINavigationController+SUIAdditions.m in Sources */,
 				F64D42A120AD2606004F60A5 /* NetAPIConst.m in Sources */,
 				F68A786820AE7B6A000C2544 /* ASCollectionViewController.m in Sources */,
+				F66CC3FD20CE1DE90000071F /* ASVideoDownloadsViewController.m in Sources */,
 				F64D430620AD53E0004F60A5 /* NSIndexPath+SUIAdditions.m in Sources */,
 				F68A786B20AE7B6A000C2544 /* ASRefreshCollectionViewController.m in Sources */,
 				F68A786D20AE7B6A000C2544 /* ASRequestBaseViewController.m in Sources */,
@@ -1179,6 +1214,7 @@
 				F614862620AED5AD008F829C /* ASCALayerAnimationViewController.m in Sources */,
 				F64D431320AD53E0004F60A5 /* UIImage+SUIAdditions.m in Sources */,
 				F64D42A220AD2606004F60A5 /* NetRequestClass.m in Sources */,
+				F66CC3F420CE1D300000071F /* ASVideoNormalViewController.m in Sources */,
 				F68A787220AE7B6A000C2544 /* ASItemSection.m in Sources */,
 				F64D42B520AD4E6E004F60A5 /* PPNetworkCache.m in Sources */,
 				F64D430020AD53E0004F60A5 /* NSArray+SUIAdditions.m in Sources */,
@@ -1218,6 +1254,17 @@
 			targetProxy = F64D426F20AD1E1F004F60A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F66CC3EF20CE138E0000071F /* Video.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F66CC3F020CE138E0000071F /* Base */,
+			);
+			name = Video.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F64D427520AD1E1F004F60A5 /* Debug */ = {
