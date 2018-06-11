@@ -28,6 +28,9 @@
 #import <YYCategories.h>
 //================= 第三方 ================
 #import "Masonry.h"
+#import <MJExtension.h>
+#import "MJDownload.h"
+
 
 #endif
 

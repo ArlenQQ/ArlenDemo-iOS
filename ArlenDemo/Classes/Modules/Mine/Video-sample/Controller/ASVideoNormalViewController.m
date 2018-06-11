@@ -7,13 +7,12 @@
 //
 
 #import "ASVideoNormalViewController.h"
-
+#import "ASVideoCachesTool.h"
 #import "ZFPlayer.h"
 
 @interface ASVideoNormalViewController ()<ZFPlayerDelegate>
 
-/** 播放的Url */
-@property (nonatomic, copy) NSString *videoURL;
+
 /** 播放器View的父视图*/
 @property (nonatomic, strong) UIView *playerFatherView;
 @property (strong, nonatomic) ZFPlayerView *playerView;
@@ -81,9 +80,7 @@
 
 - (void)zf_playerDownload:(NSString *)url {
     // 此处是截取的下载地址，可以自己根据服务器的视频名称来赋值
-    //    NSString *name = [url lastPathComponent];
-    //    [[VIDCachesTool sharedTool].downloadManager download:url];
-    //[VIDSharedTool downLoad:url];
+    [[ASVideoCachesTool sharedTool] downLoad:url];
 }
 
 - (void)zf_playerControlViewWillShow:(UIView *)controlView isFullscreen:(BOOL)fullscreen {

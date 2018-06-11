@@ -62,6 +62,17 @@
 		F66CC3F720CE1D6B0000071F /* ASVideoTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66CC3F620CE1D6B0000071F /* ASVideoTableViewViewController.m */; };
 		F66CC3FA20CE1D8F0000071F /* ASVideoCollectionViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66CC3F920CE1D8F0000071F /* ASVideoCollectionViewViewController.m */; };
 		F66CC3FD20CE1DE90000071F /* ASVideoDownloadsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66CC3FC20CE1DE90000071F /* ASVideoDownloadsViewController.m */; };
+		F66CC44720CE4DB70000071F /* ASVideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66CC44620CE4DB70000071F /* ASVideoListViewController.m */; };
+		F66CC44920CE4FB40000071F /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = F66CC44820CE4FB40000071F /* data.json */; };
+		F66CC44F20CE57C00000071F /* ASVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = F66CC44E20CE57C00000071F /* ASVideo.m */; };
+		F66CC45220CE5E020000071F /* ASVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F66CC45120CE5E020000071F /* ASVideoCell.m */; };
+		F66CC45520CE6BE60000071F /* ASVideoCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F66CC45420CE6BE60000071F /* ASVideoCollectionCell.m */; };
+		F66CC45920CE74D10000071F /* ASVideoCachesTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F66CC45820CE74D10000071F /* ASVideoCachesTool.m */; };
+		F66CC46220CE755A0000071F /* MJDownloadConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F66CC45D20CE755A0000071F /* MJDownloadConst.m */; };
+		F66CC46320CE755A0000071F /* MJDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F66CC45F20CE755A0000071F /* MJDownloadManager.m */; };
+		F66CC46420CE755A0000071F /* NSString+MJDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = F66CC46120CE755A0000071F /* NSString+MJDownload.m */; };
+		F66CC46720CE77940000071F /* ASVideoDownloadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F66CC46620CE77940000071F /* ASVideoDownloadingCell.m */; };
+		F66CC46A20CE77A40000071F /* ASVideoDownloadedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F66CC46920CE77A40000071F /* ASVideoDownloadedCell.m */; };
 		F68A77E020AE708C000C2544 /* ASTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F68A77DD20AE708B000C2544 /* ASTabBarControllerConfig.m */; };
 		F68A77E320AE719D000C2544 /* ASHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68A77E220AE719D000C2544 /* ASHomeViewController.m */; };
 		F68A77E620AE71B5000C2544 /* ASMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68A77E520AE71B5000C2544 /* ASMessageViewController.m */; };
@@ -242,6 +253,28 @@
 		F66CC3F920CE1D8F0000071F /* ASVideoCollectionViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASVideoCollectionViewViewController.m; sourceTree = "<group>"; };
 		F66CC3FB20CE1DE90000071F /* ASVideoDownloadsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASVideoDownloadsViewController.h; sourceTree = "<group>"; };
 		F66CC3FC20CE1DE90000071F /* ASVideoDownloadsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASVideoDownloadsViewController.m; sourceTree = "<group>"; };
+		F66CC44520CE4DB70000071F /* ASVideoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASVideoListViewController.h; sourceTree = "<group>"; };
+		F66CC44620CE4DB70000071F /* ASVideoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASVideoListViewController.m; sourceTree = "<group>"; };
+		F66CC44820CE4FB40000071F /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		F66CC44D20CE57C00000071F /* ASVideo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASVideo.h; sourceTree = "<group>"; };
+		F66CC44E20CE57C00000071F /* ASVideo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASVideo.m; sourceTree = "<group>"; };
+		F66CC45020CE5E020000071F /* ASVideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASVideoCell.h; sourceTree = "<group>"; };
+		F66CC45120CE5E020000071F /* ASVideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASVideoCell.m; sourceTree = "<group>"; };
+		F66CC45320CE6BE60000071F /* ASVideoCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASVideoCollectionCell.h; sourceTree = "<group>"; };
+		F66CC45420CE6BE60000071F /* ASVideoCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASVideoCollectionCell.m; sourceTree = "<group>"; };
+		F66CC45720CE74D10000071F /* ASVideoCachesTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASVideoCachesTool.h; sourceTree = "<group>"; };
+		F66CC45820CE74D10000071F /* ASVideoCachesTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASVideoCachesTool.m; sourceTree = "<group>"; };
+		F66CC45B20CE755A0000071F /* MJDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDownload.h; sourceTree = "<group>"; };
+		F66CC45C20CE755A0000071F /* MJDownloadConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDownloadConst.h; sourceTree = "<group>"; };
+		F66CC45D20CE755A0000071F /* MJDownloadConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDownloadConst.m; sourceTree = "<group>"; };
+		F66CC45E20CE755A0000071F /* MJDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDownloadManager.h; sourceTree = "<group>"; };
+		F66CC45F20CE755A0000071F /* MJDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDownloadManager.m; sourceTree = "<group>"; };
+		F66CC46020CE755A0000071F /* NSString+MJDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJDownload.h"; sourceTree = "<group>"; };
+		F66CC46120CE755A0000071F /* NSString+MJDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJDownload.m"; sourceTree = "<group>"; };
+		F66CC46520CE77940000071F /* ASVideoDownloadingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASVideoDownloadingCell.h; sourceTree = "<group>"; };
+		F66CC46620CE77940000071F /* ASVideoDownloadingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASVideoDownloadingCell.m; sourceTree = "<group>"; };
+		F66CC46820CE77A40000071F /* ASVideoDownloadedCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASVideoDownloadedCell.h; sourceTree = "<group>"; };
+		F66CC46920CE77A40000071F /* ASVideoDownloadedCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASVideoDownloadedCell.m; sourceTree = "<group>"; };
 		F68A77DC20AE708B000C2544 /* ASTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTabBarControllerConfig.h; sourceTree = "<group>"; };
 		F68A77DD20AE708B000C2544 /* ASTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTabBarControllerConfig.m; sourceTree = "<group>"; };
 		F68A77E120AE719D000C2544 /* ASHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASHomeViewController.h; sourceTree = "<group>"; };
@@ -576,6 +609,7 @@
 		F64D42BD20AD53D3004F60A5 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F66CC45A20CE755A0000071F /* MJDownload */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -766,6 +800,41 @@
 		F66CC3EE20CE12E30000071F /* Video-sample */ = {
 			isa = PBXGroup;
 			children = (
+				F66CC45620CE74970000071F /* Other */,
+				F66CC44C20CE570C0000071F /* Controller */,
+				F66CC44B20CE57060000071F /* Model */,
+				F66CC44A20CE54740000071F /* View */,
+			);
+			path = "Video-sample";
+			sourceTree = "<group>";
+		};
+		F66CC44A20CE54740000071F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F66CC45020CE5E020000071F /* ASVideoCell.h */,
+				F66CC45120CE5E020000071F /* ASVideoCell.m */,
+				F66CC45320CE6BE60000071F /* ASVideoCollectionCell.h */,
+				F66CC45420CE6BE60000071F /* ASVideoCollectionCell.m */,
+				F66CC46520CE77940000071F /* ASVideoDownloadingCell.h */,
+				F66CC46620CE77940000071F /* ASVideoDownloadingCell.m */,
+				F66CC46820CE77A40000071F /* ASVideoDownloadedCell.h */,
+				F66CC46920CE77A40000071F /* ASVideoDownloadedCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F66CC44B20CE57060000071F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F66CC44D20CE57C00000071F /* ASVideo.h */,
+				F66CC44E20CE57C00000071F /* ASVideo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F66CC44C20CE570C0000071F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				F66CC3F220CE1D300000071F /* ASVideoNormalViewController.h */,
 				F66CC3F320CE1D300000071F /* ASVideoNormalViewController.m */,
 				F66CC3F520CE1D6B0000071F /* ASVideoTableViewViewController.h */,
@@ -774,8 +843,34 @@
 				F66CC3F920CE1D8F0000071F /* ASVideoCollectionViewViewController.m */,
 				F66CC3FB20CE1DE90000071F /* ASVideoDownloadsViewController.h */,
 				F66CC3FC20CE1DE90000071F /* ASVideoDownloadsViewController.m */,
+				F66CC44520CE4DB70000071F /* ASVideoListViewController.h */,
+				F66CC44620CE4DB70000071F /* ASVideoListViewController.m */,
 			);
-			path = "Video-sample";
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F66CC45620CE74970000071F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F66CC44820CE4FB40000071F /* data.json */,
+				F66CC45720CE74D10000071F /* ASVideoCachesTool.h */,
+				F66CC45820CE74D10000071F /* ASVideoCachesTool.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F66CC45A20CE755A0000071F /* MJDownload */ = {
+			isa = PBXGroup;
+			children = (
+				F66CC45B20CE755A0000071F /* MJDownload.h */,
+				F66CC45C20CE755A0000071F /* MJDownloadConst.h */,
+				F66CC45D20CE755A0000071F /* MJDownloadConst.m */,
+				F66CC45E20CE755A0000071F /* MJDownloadManager.h */,
+				F66CC45F20CE755A0000071F /* MJDownloadManager.m */,
+				F66CC46020CE755A0000071F /* NSString+MJDownload.h */,
+				F66CC46120CE755A0000071F /* NSString+MJDownload.m */,
+			);
+			path = MJDownload;
 			sourceTree = "<group>";
 		};
 		F68A77D820AE708B000C2544 /* CenterPlus */ = {
@@ -1052,6 +1147,7 @@
 				F694F85920BCF3AE00A9775E /* Preview.xcassets in Resources */,
 				F64D425820AD1E1F004F60A5 /* Assets.xcassets in Resources */,
 				F66CC3F120CE138E0000071F /* Video.storyboard in Resources */,
+				F66CC44920CE4FB40000071F /* data.json in Resources */,
 				F64D434220AD5BB7004F60A5 /* AOPLoggerConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1147,6 +1243,7 @@
 				F6CC193420ADAB5700B88887 /* ASDeviceUtil.m in Sources */,
 				F68A787420AE7B6A000C2544 /* ASWordItem.m in Sources */,
 				F64D431620AD53E0004F60A5 /* UIScrollView+SUIAdditions.m in Sources */,
+				F66CC45220CE5E020000071F /* ASVideoCell.m in Sources */,
 				F68A787720AE7B6A000C2544 /* ASHorizontalFlowLayout.m in Sources */,
 				F64D430B20AD53E0004F60A5 /* NSString+SUIRegex.m in Sources */,
 				F64D433920AD579A004F60A5 /* UIViewController+AOPPageView.m in Sources */,
@@ -1159,6 +1256,7 @@
 				F614862C20AEE03A008F829C /* ASHeartView.m in Sources */,
 				F68A786C20AE7B6A000C2544 /* ASRefreshTableViewController.m in Sources */,
 				F68A786A20AE7B6A000C2544 /* ASNavUIBaseViewController.m in Sources */,
+				F66CC46720CE77940000071F /* ASVideoDownloadingCell.m in Sources */,
 				F614862920AEDC23008F829C /* UIView+ASTransform.m in Sources */,
 				F694F85720BCF21B00A9775E /* ASLineFlowLayout.m in Sources */,
 				F64D430F20AD53E0004F60A5 /* SUITool+OpenURL.m in Sources */,
@@ -1169,6 +1267,7 @@
 				F64D430A20AD53E0004F60A5 /* NSString+SUICrypto.m in Sources */,
 				F694F84D20BCEEC400A9775E /* ASCuteFlowLayoutViewController.m in Sources */,
 				F64D42AD20AD2965004F60A5 /* ASFMDB.m in Sources */,
+				F66CC44F20CE57C00000071F /* ASVideo.m in Sources */,
 				F64D431520AD53E0004F60A5 /* UINavigationController+SUIAdditions.m in Sources */,
 				F64D42A120AD2606004F60A5 /* NetAPIConst.m in Sources */,
 				F68A786820AE7B6A000C2544 /* ASCollectionViewController.m in Sources */,
@@ -1190,6 +1289,7 @@
 				F64D42A320AD2606004F60A5 /* ViewModelClass.m in Sources */,
 				F64D430820AD53E0004F60A5 /* NSObject+SUIAdditions.m in Sources */,
 				F694F85420BCF16200A9775E /* ASGirdLayout.m in Sources */,
+				F66CC44720CE4DB70000071F /* ASVideoListViewController.m in Sources */,
 				F68A77F520AE7813000C2544 /* UIView+Animation.m in Sources */,
 				F64D42B620AD4E6E004F60A5 /* PPNetworkHelper.m in Sources */,
 				F64D433720AD579A004F60A5 /* UIView+AOPGestureRecognizer.m in Sources */,
@@ -1202,10 +1302,15 @@
 				F68A787B20AE7B6A000C2544 /* ASVerticalFlowLayout.m in Sources */,
 				F68A787A20AE7B6A000C2544 /* ASSettingCell.m in Sources */,
 				F68A787920AE7B6A000C2544 /* ASNormalRefreshHeader.m in Sources */,
+				F66CC45520CE6BE60000071F /* ASVideoCollectionCell.m in Sources */,
 				F64D431C20AD53E0004F60A5 /* UIViewController+SUIAdditions.m in Sources */,
 				F68A787820AE7B6A000C2544 /* ASNavigationBar.m in Sources */,
+				F66CC45920CE74D10000071F /* ASVideoCachesTool.m in Sources */,
+				F66CC46A20CE77A40000071F /* ASVideoDownloadedCell.m in Sources */,
 				F64D431A20AD53E0004F60A5 /* UITextView+SUIAdditions.m in Sources */,
+				F66CC46220CE755A0000071F /* MJDownloadConst.m in Sources */,
 				F68A77EF20AE721A000C2544 /* ASMineViewController.m in Sources */,
+				F66CC46320CE755A0000071F /* MJDownloadManager.m in Sources */,
 				F64D430E20AD53E0004F60A5 /* SUITool+FileManager.m in Sources */,
 				F64D430C20AD53E0004F60A5 /* SUITool+Camera.m in Sources */,
 				F64D430520AD53E0004F60A5 /* NSDictionary+SUISafeAccess.m in Sources */,
@@ -1214,6 +1319,7 @@
 				F614862620AED5AD008F829C /* ASCALayerAnimationViewController.m in Sources */,
 				F64D431320AD53E0004F60A5 /* UIImage+SUIAdditions.m in Sources */,
 				F64D42A220AD2606004F60A5 /* NetRequestClass.m in Sources */,
+				F66CC46420CE755A0000071F /* NSString+MJDownload.m in Sources */,
 				F66CC3F420CE1D300000071F /* ASVideoNormalViewController.m in Sources */,
 				F68A787220AE7B6A000C2544 /* ASItemSection.m in Sources */,
 				F64D42B520AD4E6E004F60A5 /* PPNetworkCache.m in Sources */,

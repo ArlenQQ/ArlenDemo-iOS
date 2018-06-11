@@ -6,8 +6,8 @@
 //  Copyright © 2018年 乐居Mac. All rights reserved.
 //
 
-#import "ASBaseViewController.h"
+#import "ASTableViewController.h"
 
-@interface ASVideoDownloadsViewController : ASBaseViewController
+@interface ASVideoDownloadsViewController : ASTableViewController
 
 @end

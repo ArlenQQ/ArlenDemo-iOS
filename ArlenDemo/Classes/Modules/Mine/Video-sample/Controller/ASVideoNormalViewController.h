@@ -9,5 +9,6 @@
 #import "ASBaseViewController.h"
 
 @interface ASVideoNormalViewController : ASBaseViewController
-
+/** 播放的Url */
+@property (nonatomic, copy) NSString *videoURL;
 @end
