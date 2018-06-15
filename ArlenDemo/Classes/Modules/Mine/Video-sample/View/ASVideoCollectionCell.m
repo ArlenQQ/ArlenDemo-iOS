@@ -26,6 +26,7 @@ typedef void(^ASPlayHandler)(ASVideoCollectionCell *cell);
 -(void)awakeFromNib{
     [super awakeFromNib];
     [_bgImageView setContentMode:(UIViewContentModeScaleAspectFill)];
+    _bgImageView.layer.masksToBounds = true;
 }
 
 -(void)setModel:(ASVideo *)model{
