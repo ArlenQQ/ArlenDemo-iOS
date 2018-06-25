@@ -112,6 +112,10 @@
 		F694F85420BCF16200A9775E /* ASGirdLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F694F85320BCF16200A9775E /* ASGirdLayout.m */; };
 		F694F85720BCF21B00A9775E /* ASLineFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F694F85620BCF21B00A9775E /* ASLineFlowLayout.m */; };
 		F694F85920BCF3AE00A9775E /* Preview.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F694F85820BCF3AE00A9775E /* Preview.xcassets */; };
+		F6BE5F2120E0ED6800E198C6 /* ASNSThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BE5F2020E0ED6800E198C6 /* ASNSThreadViewController.m */; };
+		F6BE5F2420E0EDF300E198C6 /* ASGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BE5F2320E0EDF300E198C6 /* ASGCDViewController.m */; };
+		F6BE5F2720E0EE0A00E198C6 /* ASNSOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BE5F2620E0EE0A00E198C6 /* ASNSOperationViewController.m */; };
+		F6BE5F2A20E0EE2000E198C6 /* ASLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BE5F2920E0EE2000E198C6 /* ASLockViewController.m */; };
 		F6CC192720ADA4C300B88887 /* ASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CC192620ADA4C300B88887 /* ASAppDelegate.m */; };
 		F6CC192E20ADAA2E00B88887 /* ASNotificationConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CC192D20ADAA2E00B88887 /* ASNotificationConst.m */; };
 		F6CC193120ADAA6C00B88887 /* ASConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CC193020ADAA6C00B88887 /* ASConst.m */; };
@@ -352,6 +356,14 @@
 		F694F85520BCF21B00A9775E /* ASLineFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASLineFlowLayout.h; sourceTree = "<group>"; };
 		F694F85620BCF21B00A9775E /* ASLineFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASLineFlowLayout.m; sourceTree = "<group>"; };
 		F694F85820BCF3AE00A9775E /* Preview.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Preview.xcassets; sourceTree = "<group>"; };
+		F6BE5F1F20E0ED6800E198C6 /* ASNSThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASNSThreadViewController.h; sourceTree = "<group>"; };
+		F6BE5F2020E0ED6800E198C6 /* ASNSThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASNSThreadViewController.m; sourceTree = "<group>"; };
+		F6BE5F2220E0EDF300E198C6 /* ASGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASGCDViewController.h; sourceTree = "<group>"; };
+		F6BE5F2320E0EDF300E198C6 /* ASGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASGCDViewController.m; sourceTree = "<group>"; };
+		F6BE5F2520E0EE0A00E198C6 /* ASNSOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASNSOperationViewController.h; sourceTree = "<group>"; };
+		F6BE5F2620E0EE0A00E198C6 /* ASNSOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASNSOperationViewController.m; sourceTree = "<group>"; };
+		F6BE5F2820E0EE2000E198C6 /* ASLockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASLockViewController.h; sourceTree = "<group>"; };
+		F6BE5F2920E0EE2000E198C6 /* ASLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASLockViewController.m; sourceTree = "<group>"; };
 		F6CC192520ADA4C300B88887 /* ASAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAppDelegate.h; sourceTree = "<group>"; };
 		F6CC192620ADA4C300B88887 /* ASAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASAppDelegate.m; sourceTree = "<group>"; };
 		F6CC192820ADA75B00B88887 /* ASColorMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASColorMacros.h; sourceTree = "<group>"; };
@@ -917,6 +929,7 @@
 		F68A77DE20AE708B000C2544 /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				F6BE5F1E20E0ED0C00E198C6 /* NSThread */,
 				F68A77E420AE71B5000C2544 /* ASMessageViewController.h */,
 				F68A77E520AE71B5000C2544 /* ASMessageViewController.m */,
 			);
@@ -1034,6 +1047,21 @@
 				F694F85620BCF21B00A9775E /* ASLineFlowLayout.m */,
 			);
 			path = Layout;
+			sourceTree = "<group>";
+		};
+		F6BE5F1E20E0ED0C00E198C6 /* NSThread */ = {
+			isa = PBXGroup;
+			children = (
+				F6BE5F1F20E0ED6800E198C6 /* ASNSThreadViewController.h */,
+				F6BE5F2020E0ED6800E198C6 /* ASNSThreadViewController.m */,
+				F6BE5F2220E0EDF300E198C6 /* ASGCDViewController.h */,
+				F6BE5F2320E0EDF300E198C6 /* ASGCDViewController.m */,
+				F6BE5F2520E0EE0A00E198C6 /* ASNSOperationViewController.h */,
+				F6BE5F2620E0EE0A00E198C6 /* ASNSOperationViewController.m */,
+				F6BE5F2820E0EE2000E198C6 /* ASLockViewController.h */,
+				F6BE5F2920E0EE2000E198C6 /* ASLockViewController.m */,
+			);
+			path = NSThread;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1225,6 +1253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F64D429D20AD2606004F60A5 /* main.m in Sources */,
+				F6BE5F2120E0ED6800E198C6 /* ASNSThreadViewController.m in Sources */,
 				F68A787020AE7B6A000C2544 /* ASTextViewController.m in Sources */,
 				F68A77E320AE719D000C2544 /* ASHomeViewController.m in Sources */,
 				F66CC3F720CE1D6B0000071F /* ASVideoTableViewViewController.m in Sources */,
@@ -1255,6 +1284,7 @@
 				F68A786720AE7B6A000C2544 /* ASBaseViewController.m in Sources */,
 				F614862C20AEE03A008F829C /* ASHeartView.m in Sources */,
 				F68A786C20AE7B6A000C2544 /* ASRefreshTableViewController.m in Sources */,
+				F6BE5F2420E0EDF300E198C6 /* ASGCDViewController.m in Sources */,
 				F68A786A20AE7B6A000C2544 /* ASNavUIBaseViewController.m in Sources */,
 				F66CC46720CE77940000071F /* ASVideoDownloadingCell.m in Sources */,
 				F614862920AEDC23008F829C /* UIView+ASTransform.m in Sources */,
@@ -1279,6 +1309,7 @@
 				F64D433A20AD579A004F60A5 /* AOPLogger.m in Sources */,
 				F64D431220AD53E0004F60A5 /* UIControl+SUIAdditions.m in Sources */,
 				F64D431920AD53E0004F60A5 /* UITextField+SUIAdditions.m in Sources */,
+				F6BE5F2720E0EE0A00E198C6 /* ASNSOperationViewController.m in Sources */,
 				F6CC193A20ADB30400B88887 /* UIColor+Extension.m in Sources */,
 				F694F84720BCEB8F00A9775E /* ASVerticalLayoutViewController.m in Sources */,
 				F64D430D20AD53E0004F60A5 /* SUITool+Delay.m in Sources */,
@@ -1299,6 +1330,7 @@
 				F64D430720AD53E0004F60A5 /* NSNumber+SUIAdditions.m in Sources */,
 				F68A788120AEA727000C2544 /* MBProgressHUD+AS.m in Sources */,
 				F694F85120BCEFE700A9775E /* ASCircleLayout.m in Sources */,
+				F6BE5F2A20E0EE2000E198C6 /* ASLockViewController.m in Sources */,
 				F68A787B20AE7B6A000C2544 /* ASVerticalFlowLayout.m in Sources */,
 				F68A787A20AE7B6A000C2544 /* ASSettingCell.m in Sources */,
 				F68A787920AE7B6A000C2544 /* ASNormalRefreshHeader.m in Sources */,

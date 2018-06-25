@@ -30,6 +30,7 @@
 #import "Masonry.h"
 #import <MJExtension.h>
 #import "MJDownload.h"
+#import "Toast.h"
 
 
 #endif
