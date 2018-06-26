@@ -97,7 +97,7 @@ target 'ArlenDemo' do
     pod "ZJScrollPageView"
     
     # 列表视频
-    pod "ZFPlayer"
+    pod "ZFPlayer", '~> 2.1.6'
     #pod 'ZFDownload'
     #pod 'KTVHTTPCache', :git => 'https://github.com/ChangbaDevs/KTVHTTPCache.git'
     
