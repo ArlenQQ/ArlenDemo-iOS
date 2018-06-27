@@ -126,7 +126,7 @@ static CGFloat const ASTabBarControllerHeight = 44.f;
 #warning CUSTOMIZE YOUR TABBAR APPEARANCE
     // Customize UITabBar height
     // 自定义 TabBar 高度
-    tabBarController.tabBarHeight = CYL_IS_IPHONE_X ? 65 : 40;
+    tabBarController.tabBarHeight = CYL_IS_IPHONE_X ? 83 : 49;
     
     // set the text color for unselected state
     // 普通状态下的文字属性
