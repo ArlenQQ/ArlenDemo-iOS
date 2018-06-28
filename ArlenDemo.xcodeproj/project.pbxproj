@@ -11,6 +11,16 @@
 		F614862620AED5AD008F829C /* ASCALayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F614862420AED5AD008F829C /* ASCALayerAnimationViewController.m */; };
 		F614862920AEDC23008F829C /* UIView+ASTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = F614862820AEDC23008F829C /* UIView+ASTransform.m */; };
 		F614862C20AEE03A008F829C /* ASHeartView.m in Sources */ = {isa = PBXBuildFile; fileRef = F614862B20AEE03A008F829C /* ASHeartView.m */; };
+		F61E586020E38B73008C28A2 /* ASChartHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61E585F20E38B73008C28A2 /* ASChartHomeViewController.m */; };
+		F61E586A20E392D5008C28A2 /* ASBaseColumnChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61E586920E392D5008C28A2 /* ASBaseColumnChartViewController.m */; };
+		F61E586D20E39362008C28A2 /* ASBaseBarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61E586C20E39362008C28A2 /* ASBaseBarChartViewController.m */; };
+		F61E587020E39377008C28A2 /* ASBaseAreaChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61E586F20E39377008C28A2 /* ASBaseAreaChartViewController.m */; };
+		F61E587320E393B1008C28A2 /* ASBaseAreasplineChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61E587220E393B1008C28A2 /* ASBaseAreasplineChartViewController.m */; };
+		F61E587620E393C8008C28A2 /* ASBaseLineChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61E587520E393C8008C28A2 /* ASBaseLineChartViewController.m */; };
+		F61E587920E393E7008C28A2 /* ASBaseSplineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61E587820E393E7008C28A2 /* ASBaseSplineViewController.m */; };
+		F61E587C20E3941B008C28A2 /* ASBaseStepLineChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61E587B20E3941B008C28A2 /* ASBaseStepLineChartViewController.m */; };
+		F61E587F20E39436008C28A2 /* ASBaseStepAreaChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61E587E20E39436008C28A2 /* ASBaseStepAreaChartViewController.m */; };
+		F61E588220E39452008C28A2 /* ASBaseScatterChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61E588120E39452008C28A2 /* ASBaseScatterChartViewController.m */; };
 		F64D425820AD1E1F004F60A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64D425720AD1E1F004F60A5 /* Assets.xcassets */; };
 		F64D426820AD1E1F004F60A5 /* ArlenDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F64D426720AD1E1F004F60A5 /* ArlenDemoTests.m */; };
 		F64D427320AD1E1F004F60A5 /* ArlenDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F64D427220AD1E1F004F60A5 /* ArlenDemoUITests.m */; };
@@ -151,6 +161,26 @@
 		F614862820AEDC23008F829C /* UIView+ASTransform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ASTransform.m"; sourceTree = "<group>"; };
 		F614862A20AEE03A008F829C /* ASHeartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASHeartView.h; sourceTree = "<group>"; };
 		F614862B20AEE03A008F829C /* ASHeartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASHeartView.m; sourceTree = "<group>"; };
+		F61E585E20E38B73008C28A2 /* ASChartHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASChartHomeViewController.h; sourceTree = "<group>"; };
+		F61E585F20E38B73008C28A2 /* ASChartHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASChartHomeViewController.m; sourceTree = "<group>"; };
+		F61E586820E392D5008C28A2 /* ASBaseColumnChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASBaseColumnChartViewController.h; sourceTree = "<group>"; };
+		F61E586920E392D5008C28A2 /* ASBaseColumnChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASBaseColumnChartViewController.m; sourceTree = "<group>"; };
+		F61E586B20E39362008C28A2 /* ASBaseBarChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASBaseBarChartViewController.h; sourceTree = "<group>"; };
+		F61E586C20E39362008C28A2 /* ASBaseBarChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASBaseBarChartViewController.m; sourceTree = "<group>"; };
+		F61E586E20E39377008C28A2 /* ASBaseAreaChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASBaseAreaChartViewController.h; sourceTree = "<group>"; };
+		F61E586F20E39377008C28A2 /* ASBaseAreaChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASBaseAreaChartViewController.m; sourceTree = "<group>"; };
+		F61E587120E393B1008C28A2 /* ASBaseAreasplineChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASBaseAreasplineChartViewController.h; sourceTree = "<group>"; };
+		F61E587220E393B1008C28A2 /* ASBaseAreasplineChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASBaseAreasplineChartViewController.m; sourceTree = "<group>"; };
+		F61E587420E393C8008C28A2 /* ASBaseLineChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASBaseLineChartViewController.h; sourceTree = "<group>"; };
+		F61E587520E393C8008C28A2 /* ASBaseLineChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASBaseLineChartViewController.m; sourceTree = "<group>"; };
+		F61E587720E393E7008C28A2 /* ASBaseSplineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASBaseSplineViewController.h; sourceTree = "<group>"; };
+		F61E587820E393E7008C28A2 /* ASBaseSplineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASBaseSplineViewController.m; sourceTree = "<group>"; };
+		F61E587A20E3941B008C28A2 /* ASBaseStepLineChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASBaseStepLineChartViewController.h; sourceTree = "<group>"; };
+		F61E587B20E3941B008C28A2 /* ASBaseStepLineChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASBaseStepLineChartViewController.m; sourceTree = "<group>"; };
+		F61E587D20E39436008C28A2 /* ASBaseStepAreaChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASBaseStepAreaChartViewController.h; sourceTree = "<group>"; };
+		F61E587E20E39436008C28A2 /* ASBaseStepAreaChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASBaseStepAreaChartViewController.m; sourceTree = "<group>"; };
+		F61E588020E39452008C28A2 /* ASBaseScatterChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASBaseScatterChartViewController.h; sourceTree = "<group>"; };
+		F61E588120E39452008C28A2 /* ASBaseScatterChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASBaseScatterChartViewController.m; sourceTree = "<group>"; };
 		F64D424B20AD1E1F004F60A5 /* ArlenDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArlenDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64D425720AD1E1F004F60A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F64D425C20AD1E1F004F60A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -422,6 +452,89 @@
 				0CC86FF1542AD6AFE2599CA3 /* Pods-ArlenDemo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F61E585720E38A28008C28A2 /* Chart-sample */ = {
+			isa = PBXGroup;
+			children = (
+				F61E586720E3925B008C28A2 /* ManyAAChartView */,
+				F61E586620E39248008C28A2 /* UseAAOptions */,
+				F61E586520E39231008C28A2 /* AnimationType */,
+				F61E586420E391FF008C28A2 /* RealTimeRefresh */,
+				F61E586320E391E1008C28A2 /* MixedTypeChart */,
+				F61E586220E391C8008C28A2 /* SpecialTypeChart */,
+				F61E586120E391A9008C28A2 /* BaseTypeChart */,
+				F61E585E20E38B73008C28A2 /* ASChartHomeViewController.h */,
+				F61E585F20E38B73008C28A2 /* ASChartHomeViewController.m */,
+			);
+			path = "Chart-sample";
+			sourceTree = "<group>";
+		};
+		F61E586120E391A9008C28A2 /* BaseTypeChart */ = {
+			isa = PBXGroup;
+			children = (
+				F61E586820E392D5008C28A2 /* ASBaseColumnChartViewController.h */,
+				F61E586920E392D5008C28A2 /* ASBaseColumnChartViewController.m */,
+				F61E586B20E39362008C28A2 /* ASBaseBarChartViewController.h */,
+				F61E586C20E39362008C28A2 /* ASBaseBarChartViewController.m */,
+				F61E586E20E39377008C28A2 /* ASBaseAreaChartViewController.h */,
+				F61E586F20E39377008C28A2 /* ASBaseAreaChartViewController.m */,
+				F61E587120E393B1008C28A2 /* ASBaseAreasplineChartViewController.h */,
+				F61E587220E393B1008C28A2 /* ASBaseAreasplineChartViewController.m */,
+				F61E587420E393C8008C28A2 /* ASBaseLineChartViewController.h */,
+				F61E587520E393C8008C28A2 /* ASBaseLineChartViewController.m */,
+				F61E587720E393E7008C28A2 /* ASBaseSplineViewController.h */,
+				F61E587820E393E7008C28A2 /* ASBaseSplineViewController.m */,
+				F61E587A20E3941B008C28A2 /* ASBaseStepLineChartViewController.h */,
+				F61E587B20E3941B008C28A2 /* ASBaseStepLineChartViewController.m */,
+				F61E587D20E39436008C28A2 /* ASBaseStepAreaChartViewController.h */,
+				F61E587E20E39436008C28A2 /* ASBaseStepAreaChartViewController.m */,
+				F61E588020E39452008C28A2 /* ASBaseScatterChartViewController.h */,
+				F61E588120E39452008C28A2 /* ASBaseScatterChartViewController.m */,
+			);
+			path = BaseTypeChart;
+			sourceTree = "<group>";
+		};
+		F61E586220E391C8008C28A2 /* SpecialTypeChart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SpecialTypeChart;
+			sourceTree = "<group>";
+		};
+		F61E586320E391E1008C28A2 /* MixedTypeChart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MixedTypeChart;
+			sourceTree = "<group>";
+		};
+		F61E586420E391FF008C28A2 /* RealTimeRefresh */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RealTimeRefresh;
+			sourceTree = "<group>";
+		};
+		F61E586520E39231008C28A2 /* AnimationType */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AnimationType;
+			sourceTree = "<group>";
+		};
+		F61E586620E39248008C28A2 /* UseAAOptions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseAAOptions;
+			sourceTree = "<group>";
+		};
+		F61E586720E3925B008C28A2 /* ManyAAChartView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ManyAAChartView;
 			sourceTree = "<group>";
 		};
 		F64D424220AD1E1F004F60A5 = {
@@ -939,6 +1052,7 @@
 		F68A77DF20AE708C000C2544 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				F61E585720E38A28008C28A2 /* Chart-sample */,
 				F66CC3EE20CE12E30000071F /* Video-sample */,
 				F68A77ED20AE721A000C2544 /* ASMineViewController.h */,
 				F68A77EE20AE721A000C2544 /* ASMineViewController.m */,
@@ -1268,6 +1382,7 @@
 				F64D431B20AD53E0004F60A5 /* UIView+SUIAdditions.m in Sources */,
 				F64D433B20AD579A004F60A5 /* Aspects.m in Sources */,
 				F64D431720AD53E0004F60A5 /* UIStoryboardSegue+SUIAdditions.m in Sources */,
+				F61E587920E393E7008C28A2 /* ASBaseSplineViewController.m in Sources */,
 				F68A77F220AE74BC000C2544 /* ASPlusButtonSubclass.m in Sources */,
 				F6CC193420ADAB5700B88887 /* ASDeviceUtil.m in Sources */,
 				F68A787420AE7B6A000C2544 /* ASWordItem.m in Sources */,
@@ -1281,6 +1396,7 @@
 				F68A77EC20AE7203000C2544 /* ASFunctionViewController.m in Sources */,
 				F64D431020AD53E0004F60A5 /* SUITool.m in Sources */,
 				F68A786F20AE7B6A000C2544 /* ASTableViewController.m in Sources */,
+				F61E587020E39377008C28A2 /* ASBaseAreaChartViewController.m in Sources */,
 				F68A786720AE7B6A000C2544 /* ASBaseViewController.m in Sources */,
 				F614862C20AEE03A008F829C /* ASHeartView.m in Sources */,
 				F68A786C20AE7B6A000C2544 /* ASRefreshTableViewController.m in Sources */,
@@ -1289,6 +1405,7 @@
 				F66CC46720CE77940000071F /* ASVideoDownloadingCell.m in Sources */,
 				F614862920AEDC23008F829C /* UIView+ASTransform.m in Sources */,
 				F694F85720BCF21B00A9775E /* ASLineFlowLayout.m in Sources */,
+				F61E587F20E39436008C28A2 /* ASBaseStepAreaChartViewController.m in Sources */,
 				F64D430F20AD53E0004F60A5 /* SUITool+OpenURL.m in Sources */,
 				F6CC192E20ADAA2E00B88887 /* ASNotificationConst.m in Sources */,
 				F64D433820AD579A004F60A5 /* AOPLogger+Custom.m in Sources */,
@@ -1296,6 +1413,7 @@
 				F66CC3FA20CE1D8F0000071F /* ASVideoCollectionViewViewController.m in Sources */,
 				F64D430A20AD53E0004F60A5 /* NSString+SUICrypto.m in Sources */,
 				F694F84D20BCEEC400A9775E /* ASCuteFlowLayoutViewController.m in Sources */,
+				F61E587620E393C8008C28A2 /* ASBaseLineChartViewController.m in Sources */,
 				F64D42AD20AD2965004F60A5 /* ASFMDB.m in Sources */,
 				F66CC44F20CE57C00000071F /* ASVideo.m in Sources */,
 				F64D431520AD53E0004F60A5 /* UINavigationController+SUIAdditions.m in Sources */,
@@ -1303,6 +1421,7 @@
 				F68A786820AE7B6A000C2544 /* ASCollectionViewController.m in Sources */,
 				F66CC3FD20CE1DE90000071F /* ASVideoDownloadsViewController.m in Sources */,
 				F64D430620AD53E0004F60A5 /* NSIndexPath+SUIAdditions.m in Sources */,
+				F61E587320E393B1008C28A2 /* ASBaseAreasplineChartViewController.m in Sources */,
 				F68A786B20AE7B6A000C2544 /* ASRefreshCollectionViewController.m in Sources */,
 				F68A786D20AE7B6A000C2544 /* ASRequestBaseViewController.m in Sources */,
 				F68A77E620AE71B5000C2544 /* ASMessageViewController.m in Sources */,
@@ -1322,6 +1441,7 @@
 				F694F85420BCF16200A9775E /* ASGirdLayout.m in Sources */,
 				F66CC44720CE4DB70000071F /* ASVideoListViewController.m in Sources */,
 				F68A77F520AE7813000C2544 /* UIView+Animation.m in Sources */,
+				F61E586D20E39362008C28A2 /* ASBaseBarChartViewController.m in Sources */,
 				F64D42B620AD4E6E004F60A5 /* PPNetworkHelper.m in Sources */,
 				F64D433720AD579A004F60A5 /* UIView+AOPGestureRecognizer.m in Sources */,
 				F6CC192720ADA4C300B88887 /* ASAppDelegate.m in Sources */,
@@ -1333,6 +1453,7 @@
 				F6BE5F2A20E0EE2000E198C6 /* ASLockViewController.m in Sources */,
 				F68A787B20AE7B6A000C2544 /* ASVerticalFlowLayout.m in Sources */,
 				F68A787A20AE7B6A000C2544 /* ASSettingCell.m in Sources */,
+				F61E586A20E392D5008C28A2 /* ASBaseColumnChartViewController.m in Sources */,
 				F68A787920AE7B6A000C2544 /* ASNormalRefreshHeader.m in Sources */,
 				F66CC45520CE6BE60000071F /* ASVideoCollectionCell.m in Sources */,
 				F64D431C20AD53E0004F60A5 /* UIViewController+SUIAdditions.m in Sources */,
@@ -1341,9 +1462,12 @@
 				F66CC46A20CE77A40000071F /* ASVideoDownloadedCell.m in Sources */,
 				F64D431A20AD53E0004F60A5 /* UITextView+SUIAdditions.m in Sources */,
 				F66CC46220CE755A0000071F /* MJDownloadConst.m in Sources */,
+				F61E587C20E3941B008C28A2 /* ASBaseStepLineChartViewController.m in Sources */,
+				F61E586020E38B73008C28A2 /* ASChartHomeViewController.m in Sources */,
 				F68A77EF20AE721A000C2544 /* ASMineViewController.m in Sources */,
 				F66CC46320CE755A0000071F /* MJDownloadManager.m in Sources */,
 				F64D430E20AD53E0004F60A5 /* SUITool+FileManager.m in Sources */,
+				F61E588220E39452008C28A2 /* ASBaseScatterChartViewController.m in Sources */,
 				F64D430C20AD53E0004F60A5 /* SUITool+Camera.m in Sources */,
 				F64D430520AD53E0004F60A5 /* NSDictionary+SUISafeAccess.m in Sources */,
 				F64D433620AD579A004F60A5 /* UIApplication+AOPClick.m in Sources */,
@@ -1524,7 +1648,7 @@
 				INFOPLIST_FILE = ArlenDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Rxdemo.zhoufeng.ArlenDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arlen.s.zhoufeng.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1541,7 +1665,7 @@
 				INFOPLIST_FILE = ArlenDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Rxdemo.zhoufeng.ArlenDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arlen.s.zhoufeng.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

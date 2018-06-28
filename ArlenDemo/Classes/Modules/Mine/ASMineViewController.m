@@ -7,6 +7,7 @@
 //
 
 #import "ASMineViewController.h"
+#import "ASChartHomeViewController.h"
 
 @interface ASMineViewController ()
 
@@ -19,16 +20,16 @@
 
     // Do any additional setup after loading the view.
     ASWordItem *item00 = [ASWordItem itemWithTitle:@"列表视频" subTitle: @"Video"];
-    
     @WeakObj(self);
     [item00 setItemOperation:^(NSIndexPath *indexPath){
-        
-        //UIStoryboard *video_sb = [UIStoryboard storyboardWithName:@"Video" bundle:[NSBundle mainBundle]];
-        
         [selfWeak presentViewController:[[UIStoryboard storyboardWithName:@"Video" bundle:[NSBundle mainBundle]] instantiateInitialViewController] animated:YES completion:nil];
     }];
     
-    ASItemSection *section0 = [ASItemSection sectionWithItems:@[item00] andHeaderTitle:nil footerTitle:nil];
+    ASWordArrowItem *item01 = [ASWordArrowItem itemWithTitle:@"数据统计-图表📈" subTitle:@"AAChartKit"];
+    item01.destVc = [ASChartHomeViewController class];
+    
+    
+    ASItemSection *section0 = [ASItemSection sectionWithItems:@[item00,item01] andHeaderTitle:nil footerTitle:nil];
     
     [self.sections addObject:section0];
 }
