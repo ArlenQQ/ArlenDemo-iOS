@@ -8,6 +8,8 @@
 
 #import "ASFunctionViewController.h"
 #import "ASCALayerAnimationViewController.h"
+#import "ASH5JSBridgeViewController.h"
+#import "ASH5NativeViewController.h"
 
 @interface ASFunctionViewController ()
 
@@ -17,6 +19,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    ASWordArrowItem *item01 = [ASWordArrowItem itemWithTitle:@"H5与原生交互（JSBridge）" subTitle:@"自定义JSBridge"];
+    item01.destVc = [ASH5JSBridgeViewController class];
+    
+    ASWordArrowItem *item02 = [ASWordArrowItem itemWithTitle:@"H5与原生交互（Native）" subTitle:@"Native"];
+    item02.destVc = [ASH5NativeViewController class];
+    
+    ASItemSection *section0 = [ASItemSection sectionWithItems:@[item01,item02] andHeaderTitle:@"WKWebView H5与原生混合开发H5与原生混合开发" footerTitle:@""];
+    [self.sections addObject:section0];
 
 }
 
